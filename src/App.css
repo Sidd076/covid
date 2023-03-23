@@ -1,0 +1,152 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    line-height: 1.6;
+  }
+  /* Styles for the parent container */
+.parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+  
+  /* Styles for the child containers */
+  .child-container {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    padding: 24px;
+    width: 100%;
+  }
+  
+  /* Media query for smaller screens */
+  @media (min-width: 768px) {
+    .child-container {
+      width: calc(50% - 12px);
+    }
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 1024px) {
+    .child-container {
+      width: calc(33.33% - 12px);
+    }
+  }
+  
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  
+  .App > div {
+    margin-bottom: 3%;
+  }
+  
+  .overall {
+    border: 1px groove rgb(128, 128, 128);
+    display: flex;
+    padding: 2%;
+    color: #808080;
+    font-size: 2vw;
+    width: 100%;
+  }
+  
+  .overall:first-child {
+    padding: 0.5%;
+  }
+  
+  .overall h1 {
+    width: fit-content;
+    color: #262929;
+    background-color: rgba(141, 95, 95, 0.4);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .statewise {
+    width: 80%;
+    font-size: 1.8vw;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .number {
+    text-align: right;
+  }
+  
+  .active {
+    color: rgb(255, 1, 1);
+  }
+  
+  .recovery {
+    color: rgb(2, 51, 2);
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  .active {
+    color: #e41212;
+  }
+  
+  .searchstate {
+    width: 90%;
+  
+  }
+  
+  input {
+    width    : 100%;
+    padding  : .5%;
+    font-size: 2vw;
+  }
+  
+  .displaysearch {
+    margin-top: 2%;
+    display   : flex;
+  }
+  
+  .displaysearch>div {
+    text-align: center;
+    width     : 25%;
+    border    : groove;
+    padding   : 1%;
+    font-size : 2vw;
+  }
+  
+  .confirmed {
+    color: #0000ff;
+  }
+  
+  .recovered {
+    color: #008000;
+  }
+  
+  .displaysearch>div :hover {
+    background-color: rgba(128, 128, 128, 0.178);
+  }
